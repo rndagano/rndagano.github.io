@@ -7,9 +7,7 @@ categories: project design e-commerce web-api pattern
 comments: true
 ---
 # Design a B2C E-commerce web application with API integration
-{{ page.date | date: '%B %d, %Y' }}
-
-700 – 800 words | reading time: +/- 3mn
+{{ page.date | date: '%B %d, %Y' }}  |  700 – 800 words | <i class="fa fa-clock-o" aria-hidden="true"></i> +/- 3mn
 
 Today I am going to describe how I designed and implemented an e-commerce web site. May I invite you to make yourself comfortable and grab your drink and/or food of choice? Ready? Let’s get working.
 
@@ -31,7 +29,7 @@ I have designed an e-commerce B2C web site for a small company. I took on the ro
 
 The web application has two parts, a front-office and a back-office. In the front-office, customers can consult, search and buy items from a product catalog. The back-office is the e-commerce’s management area.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Method of work
 
@@ -47,7 +45,7 @@ To complete the project, I have employed the following method:
 
 - put in place the database and implement the web site functionalities
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Project
 
@@ -57,7 +55,7 @@ The front-office allow customers to consult the product catalog and to perform s
 
 The back-office allow administrators to manage the product catalog and provide customer service. Each administrator has permissions such as the right to list, to create or to update a resource.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Database design
 
@@ -65,7 +63,7 @@ It was not easy to design a database schema supporting a flexible data structure
 
 I found several alternatives to the chosen solution. If I hadn’t to stick with a relational database, I would have chosen a NoSQL database. It provides a more flexible data structure than a relational database. I also considered using a PostgreSQL database along with its JSONB functionality. Binary JSON (JSONB) allows you to save JSON as a record’s field. You can then query it as it was a regular relational database field.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ### EAV model
 
@@ -85,14 +83,14 @@ In spite of that, I had to weight the advantages and the disadvantages of the mo
 
 - complex DML operations : selecting a product based on its attribute’s values or on attributes can take at least two to three joints besides the conditionals clauses
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Detailed analysis of a use case
 
 I choose to describe the “Pass an order” use case in this detailed analysis. It consists of the description of the use case, and of a use case, an activity and a sequence UML diagrams.
 //
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## The application’s architecture
 
@@ -102,20 +100,20 @@ I have used Shippo for the shipments and Stripe for the online payments. These w
 
 I choose Stripe because it allows me to deliver an e-commerce web site that follow the PCI DSS standard. PCI DSS helps organizations meet the security standards for manipulating credit cards data.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Deliverable
 
 A B2C e-commerce web application that offers a front and a back user interfaces. It provides the abilities to sale and manage a product catalog.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Recommendations and improvements
 
 - Integrate the B2C e-commerce web site with one or more ERP modules
 - Transform the stock management into a drop shipping system
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Conclusion
 
@@ -125,6 +123,16 @@ Did you learn something new as I did? Tell me what you think in the comment sect
 
 Thank you for you time.
 
-[top](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 
 ## Further readings
+
+[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+
+<script>
+var node = document.getElementsByClassName("fa-arrow-up");
+
+for(var i = 0; i < node.length; i++){
+  node[i].parentNode.parentNode.style.cssFloat = "right";
+}
+</script>

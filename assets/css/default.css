@@ -1,3 +1,12 @@
 p{
   text-align: justify;
 }
+
+.image-caption{
+  text-align: center;
+}
+
+.use-case-description th{
+  min-width: 200px;
+  vertical-align: top;
+}

@@ -3,7 +3,7 @@ layout: default
 title:  "Design a B2C E-commerce web application with API integration"
 date:   2017-10-29 11:49:36 +0100
 date_update:   2017-10-31 17:07:12 +0100
-categories: project design e-commerce web-api pattern
+categories: #project design e-commerce web-api pattern
 comments: true
 images_path: /assets/images/posts/2017-10-29-project-ecommerce
 ---

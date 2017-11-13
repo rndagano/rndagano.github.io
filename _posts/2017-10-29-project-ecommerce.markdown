@@ -189,9 +189,9 @@ Thank you for you time.
 [<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Some useful links
 
-- <a href="https://goshippo.com/" target="``_blank``"><i class="fa fa-external-link-square" aria-hidden="true"></i> Shippo API</a>
-- <a href="https://stripe.com/" target="``_blank``"><i class="fa fa-external-link-square" aria-hidden="true"></i> Stripe API</a>
-- <a href="https://www.pcisecuritystandards.org/" target="``_blank``"><i class="fa fa-external-link-square" aria-hidden="true"></i> Payment Card Industry Data Security Standard</a>
+- <a href="https://goshippo.com/" target="``_blank``">Shippo API <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+- <a href="https://stripe.com/" target="``_blank``">Stripe API <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+- <a href="https://www.pcisecuritystandards.org/" target="``_blank``">Payment Card Industry Data Security Standard <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
 
 <script>
 var i_fa_node = document.getElementsByClassName("fa-arrow-up");

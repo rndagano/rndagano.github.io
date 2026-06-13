@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ndagano's Projects
+title: Raymond Ndagano
 email: # left blank intentionally; contact via GitHub/Twitter
 description: >- # this means to ignore newlines until "baseurl:"
-  A place to hone your analytical skills.
+  Backend and Platfomr Engineer
 baseurl: "" # user page (rndagano.github.io) is served at the domain root
 url: "https://rndagano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 projects_surl: "/projects"

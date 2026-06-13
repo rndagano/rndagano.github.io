@@ -24,6 +24,17 @@ twitter_username: rndagano
 github_username:  rndagano
 show_downloads: false
 
+twitter:
+  card: summary_large_image
+
+# Default social-share image for jekyll-seo-tag (it reads page.image, so we
+# set it via front matter defaults; override per post with `image:`).
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/portfolio-blog.png
+
 # Build settings
 markdown: kramdown
 #theme: minima

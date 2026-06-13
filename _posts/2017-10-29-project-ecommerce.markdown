@@ -8,7 +8,7 @@ comments: true
 images_path: /assets/images/posts/2017-10-29-project-ecommerce
 ---
 # Design a B2C E-commerce web application with API integration
-{{ page.date | date: '%B %d, %Y' }}, updated {{ page.date_update | date: '%B %d, %Y' }}  |  900 – 1000 words  |  <i class="fa fa-clock-o" aria-hidden="true"></i> +/- 4 mn
+{{ page.date | date: '%B %d, %Y' }}, updated {{ page.date_update | date: '%B %d, %Y' }}  |  900 – 1000 words  |  <i class="fa-regular fa-clock" aria-hidden="true"></i> +/- 4 mn
 
 Today I am going to describe how I designed and implemented an e-commerce web site. May I invite you to make yourself comfortable and grab your drink and/or food of choice? Ready? Let’s get working.
 
@@ -25,13 +25,13 @@ Today I am going to describe how I designed and implemented an e-commerce web si
 10. [Conclusion](#conclusion)
 11. [Some useful links](#further-readings)
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Context
 I have designed an e-commerce B2C web site for a small company. I took on the role of an analyst – programmer to deliver the product.
 
 The web application has two parts, a front-office and a back-office. In the front-office, customers can consult, search and buy items from a product catalog. The back-office is the e-commerce’s management area.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Method of work
 
 To complete the project, I have employed the following method:
@@ -49,7 +49,7 @@ To complete the project, I have employed the following method:
 ![Overview of the Software development cycle]({{ page.images_path }}/method.png)
 <div class="image-caption"><em>Figure 1: Overview of the Software development cycle</em></div>
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Project
 
 The e-commerce web application provides two interfaces, a front-office and a back-office.
@@ -58,7 +58,7 @@ The front-office allow customers to consult the product catalog and to perform s
 
 The back-office allow administrators to manage the product catalog and provide customer service. Each administrator has permissions such as the right to list, to create or to update a resource.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Database design
 
 It was not easy to design a database schema supporting a flexible data structure. The data structure should scale as I added more products categories.
@@ -68,7 +68,7 @@ It was not easy to design a database schema supporting a flexible data structure
 
 I found several alternatives to the chosen solution. If I didn’t have to stick with a relational database, I would have chosen a NoSQL database. It provides a more flexible data structure than a relational database. I also considered using a PostgreSQL database along with its JSONB functionality. Binary JSON (JSONB) allows you to save JSON as a record’s field. You can then query it as it was a regular relational database field.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ### EAV model
 
 The chosen solution is the Entity – Attribute – Value model. It is a key – value pattern used in various fields such as scientific research and e-commerce platforms such as Magento and Drupal. That is because it provides the ability to work with disparate data structures.
@@ -90,7 +90,7 @@ In spite of that, I had to weight the advantages and the disadvantages of the mo
 
 - complex DML operations : selecting a product based on its attribute’s values or on attributes can take at least two to three joints besides the conditionals clauses
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Detailed analysis of a use case
 
 I choose to describe the “_Place an order_” use case in this detailed analysis. It consists of a description, and of three UML diagrams: use case, activity and sequence.
@@ -154,7 +154,7 @@ The [_table 1_](#pass-order-use-case) describes the use case. I only assumed the
 !["Place an order" Sequence diagram]({{ page.images_path }}/sequence-order.png)
 <div class="image-caption"><em>Figure 6: "Place an order" Sequence diagram</em></div>
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## The application’s architecture
 
 The B2C e-commerce web application has a client – server architecture. A user send requests to the web server, which implements the MVC model. The web server interact with the database and consumes web services.
@@ -166,18 +166,18 @@ I have used Shippo for the shipments and Stripe for the online payments. These w
 
 I choose Stripe because it allows me to deliver an e-commerce web site that follow the PCI DSS standard. PCI DSS helps organizations meet the security standards for manipulating credit cards data.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Deliverable
 
 A B2C e-commerce web application that offers a front and a back user interfaces. It provides the abilities to sale and manage a product catalog.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Improvements
 
 - Integrate the B2C e-commerce web site with one or more ERP modules
 - Transform the stock management into a drop shipping system
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Conclusion
 
 To carry out this project has been a worthwhile experience. I enjoyed applying solutions to the problems encountered. The most interesting part has been to quit my comfort zone to find a solution, the EAV model, to an unknown problem.
@@ -186,12 +186,12 @@ Did you learn something new as I did? Tell me what you think in the comment sect
 
 Thank you for you time.
 
-[<i class="fa fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
+[<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Some useful links
 
-- <a href="https://goshippo.com/" target="``_blank``">Shippo API <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-- <a href="https://stripe.com/" target="``_blank``">Stripe API <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-- <a href="https://www.pcisecuritystandards.org/" target="``_blank``">Payment Card Industry Data Security Standard <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
+- <a href="https://goshippo.com/" target="_blank" rel="noopener noreferrer">Shippo API <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
+- <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">Stripe API <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
+- <a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer">Payment Card Industry Data Security Standard <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
 
 <script>
 var i_fa_node = document.getElementsByClassName("fa-arrow-up");

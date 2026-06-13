@@ -1,0 +1,21 @@
+# <type>(<optional scope>): <short summary>   ─ max ~72 chars, imperative mood
+#
+# <optional body — what & why, wrap at 72 cols>
+#
+# <optional footer — e.g. "BREAKING CHANGE: ..." or "Closes #123">
+#
+# ── Conventional Commits 1.0.0 ───────────────────────────────────────
+# type:  feat     a new feature
+#        fix      a bug fix
+#        docs     documentation only
+#        style    formatting, no code/content change
+#        refactor neither fixes a bug nor adds a feature
+#        perf     performance improvement
+#        test     adding or fixing tests
+#        build    build system or dependencies (Gemfile, plugins)
+#        ci       CI configuration
+#        chore    maintenance, tooling, .gitignore, etc.
+#        content  blog post / page content (custom)
+# scope: optional, e.g. config, seo, layout, post, ci
+# Append "!" after type/scope for a breaking change: feat!: ...
+# ─────────────────────────────────────────────────────────────────────

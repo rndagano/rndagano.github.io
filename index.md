@@ -7,6 +7,12 @@ comments: false
 ---
 # Welcome
 
-Hi, my name is Raymond Ndagano. I am a software developer and this is a place where I discuss projects' specifications I worked on.
+Hi, my name is Raymond Ndagano. I'm a backend and platform engineer based in
+Brussels, building Java-based, cloud-native systems. This is where I write up the
+projects I work on — the specifications, the trade-offs, and what I learned along
+the way.
+
+Head to [Projects]({{ site.projects_surl | relative_url }}) to read the write-ups,
+or [About]({{ '/about/' | relative_url }}) for more on me.
 
 GitHub: <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>

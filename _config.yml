@@ -29,11 +29,12 @@ twitter:
 
 # Default social-share image for jekyll-seo-tag (it reads page.image, so we
 # set it via front matter defaults; override per post with `image:`).
+# PNG, since social scrapers don't render SVG; source: assets/images/banner.svg.
 defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/portfolio-blog.png
+      image: /assets/images/og-image.png
 
 # Build settings
 markdown: kramdown

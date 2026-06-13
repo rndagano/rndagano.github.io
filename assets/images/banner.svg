@@ -1,0 +1,39 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- ============================================================
+       Raymond Ndagano — blog banner / og:image (editable source)
+       Edit the <text> values, the gradient stops, or the node motif.
+       Re-export to PNG at 1200x630 for og:image.
+       Fonts: uses system sans + monospace. For exact match to the PNG,
+       install/keep "DejaVu Sans" + "DejaVu Sans Mono"; otherwise the
+       browser/exporter falls back to its own sans/mono.
+       ============================================================ -->
+  <defs>
+    <!-- deep teal -> slate, top-left to bottom-right -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%"  stop-color="#125e60"/>
+      <stop offset="50%" stop-color="#1a4e5c"/>
+      <stop offset="100%" stop-color="#202c3c"/>
+    </linearGradient>
+    <!-- soft mint glow behind the title -->
+    <radialGradient id="glow" cx="18%" cy="22%" r="55%">
+      <stop offset="0%"  stop-color="#5ed6c4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#5ed6c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- ---- text block. Edit the strings below. ---- -->
+  <text x="88" y="280" font-family="'DejaVu Sans', Arial, sans-serif"
+        font-weight="700" font-size="92" fill="#f0f5f6">Raymond Ndagano</text>
+
+  <text x="92" y="345" font-family="'DejaVu Sans', Arial, sans-serif"
+        font-size="40" fill="#f0f5f6">Backend &amp; Platform Engineer</text>
+
+  <text x="92" y="398" font-family="'DejaVu Sans', Arial, sans-serif"
+        font-size="40" fill="#96b2b8">Java  ·  Spring Boot  ·  Kubernetes  ·  DevOps / GitOps</text>
+
+  <text x="92" y="470" font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+        font-size="34" fill="#5ed6c4">Learn.  Build.  Publish.</text>
+</svg>

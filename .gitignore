@@ -1,4 +1,19 @@
-_site
-_plugins
-.sass-cache
+# Jekyll build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
+_plugins/
+
+# Ruby / Bundler
+.bundle/
+vendor/
+*.gem
+
+# Editors / IDEs
+.idea/
+.vscode/
+
+# OS cruft
+.DS_Store
+Thumbs.db

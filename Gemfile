@@ -21,3 +21,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Formerly part of Ruby's standard library, these were removed from the default
+# gems in Ruby 3.4+ and must be declared for the (older) github-pages Jekyll.
+gem "csv"
+gem "base64"
+gem "logger"
+gem "bigdecimal"

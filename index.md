@@ -7,7 +7,7 @@ comments: false
 ---
 # Welcome
 
-Hi, my name is Raymond Ndagano. I'm a backend and platform engineer based in
+Hi, I'm a backend and platform engineer based in
 Brussels, building Java-based, cloud-native systems. This is where I write up the
 projects I work on — the specifications, the trade-offs, and what I learned along
 the way.

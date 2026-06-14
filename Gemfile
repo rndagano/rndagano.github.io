@@ -28,3 +28,4 @@ gem "csv"
 gem "base64"
 gem "logger"
 gem "bigdecimal"
+gem "webrick" # built-in server jekyll serve needs; left Ruby defaults in 3.0+

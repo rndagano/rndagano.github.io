@@ -1,31 +1,26 @@
-/* Site masthead: full-width banner image. The branding text is baked into the
-   image, so the theme's text header is replaced; the real <h1> is kept but
-   visually hidden (see .visually-hidden) for SEO and screen readers. */
+/* Centered text masthead on the brand teal gradient (matches the banner /
+   og-image). Name, role line and slogan are centered. */
 .page-header {
-  padding: 0;
-  background: #1d2c39; /* matches the banner's dark edge; backs the nav bar */
+  padding: 3rem 1rem 2.5rem;
+  text-align: center;
+  background-color: #125e60;
+  background-image: linear-gradient(120deg, #125e60, #1a4e5c 55%, #202c3c);
 }
-.site-banner {
-  display: block;
-  width: 100%;
-  height: auto;
+.project-tagline {
+  margin-bottom: 0.4rem;
+  opacity: 0.9;
+}
+.project-slogan {
+  margin: 0.6rem 0 0;
+  text-align: center; /* override the global `p { text-align: justify }` */
+  font-family: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  color: #5ed6c4;
 }
 .page-nav {
-  padding: 1.25rem 1rem;
+  padding-top: 1.75rem;
   text-align: center;
-}
-
-/* Hidden visually, still read by assistive tech and crawlers. */
-.visually-hidden {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
 }
 
 p{

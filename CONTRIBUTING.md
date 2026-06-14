@@ -53,6 +53,21 @@ git config commit.template .gitmessage
 
 ## Local development
 
+### With Docker (no Ruby needed)
+
+If you have Docker, you don't need Ruby/DevKit installed:
+
+```sh
+docker compose up      # serves at http://localhost:4000 (first run installs gems)
+docker compose down    # stop
+```
+
+Edits rebuild automatically (polling is enabled for cross-OS bind mounts).
+
+### With a local Ruby toolchain
+
+Requires Ruby 3.x:
+
 ```sh
 bundle install
 bundle exec jekyll serve
@@ -67,3 +82,11 @@ Actions** (`.github/workflows/jekyll.yml`) on every push to `master` — not the
 classic "deploy from branch" Pages builder. The repository's
 **Settings → Pages → Build and deployment → Source** must be set to
 **GitHub Actions**.
+
+> **Note:** the CI runner is Linux and installs gems in frozen mode, so
+> `Gemfile.lock` must list the Linux platforms. If you ever regenerate the
+> lock on Windows, re-add them before committing:
+>
+> ```sh
+> bundle lock --add-platform x86_64-linux aarch64-linux
+> ```

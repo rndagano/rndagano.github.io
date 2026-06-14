@@ -23,6 +23,19 @@
   text-align: center;
 }
 
+/* Post index (/projects/) with publish dates. */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+.post-list li {
+  margin-bottom: 0.4rem;
+}
+.post-list .post-date {
+  color: #6a7a7c;
+  font-variant-numeric: tabular-nums;
+}
+
 p{
   text-align: justify;
 }

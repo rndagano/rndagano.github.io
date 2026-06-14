@@ -8,12 +8,7 @@ services:
   jekyll:
     image: ruby:3.3
     working_dir: /site
-    command: >
-      bash -lc "bundle install &&
-                bundle exec jekyll serve
-                  --host 0.0.0.0
-                  --livereload
-                  --force_polling"
+    command: bash -lc "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
     ports:
       - "4000:4000"   # site
       - "35729:35729" # livereload

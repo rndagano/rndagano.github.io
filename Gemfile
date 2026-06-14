@@ -1,31 +1,25 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-#gem "jekyll", "~> 3.6.2"
+# Standalone Jekyll 4 — no longer the `github-pages` gem. The site is built and
+# deployed by GitHub Actions (.github/workflows/jekyll.yml), not the classic
+# Pages branch builder. Run locally with `bundle exec jekyll serve`.
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-cayman", "~> 0.2"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
-
-# If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-sitemap", "~> 1.4"
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Formerly part of Ruby's standard library, these were removed from the default
-# gems in Ruby 3.4+ and must be declared for the (older) github-pages Jekyll.
+# Built-in dev server for `jekyll serve`; left Ruby's default gems in 3.0+.
+gem "webrick", "~> 1.8"
+
+# Former stdlib gems removed from Ruby's defaults in 3.4+ (needed on Ruby >= 3.4).
 gem "csv"
 gem "base64"
 gem "logger"
 gem "bigdecimal"
-gem "webrick" # built-in server jekyll serve needs; left Ruby defaults in 3.0+

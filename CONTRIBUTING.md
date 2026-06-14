@@ -59,3 +59,11 @@ bundle exec jekyll serve
 ```
 
 The site is then available at <http://localhost:4000>.
+
+## Deployment
+
+The site is built with standalone **Jekyll 4** and deployed by **GitHub
+Actions** (`.github/workflows/jekyll.yml`) on every push to `master` — not the
+classic "deploy from branch" Pages builder. The repository's
+**Settings → Pages → Build and deployment → Source** must be set to
+**GitHub Actions**.

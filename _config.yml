@@ -49,7 +49,6 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - Gemfile.lock.bak
   - CONTRIBUTING.md
   - README.md
   - .gitmessage

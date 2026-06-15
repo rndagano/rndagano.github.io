@@ -1,14 +1,15 @@
 ---
 layout: default
 title:  "Design a B2C E-commerce web application with API integration"
+description: "How I designed and built a B2C e-commerce web application — functional specs, an EAV database model, UML use-case analysis, and Stripe/Shippo API integration."
 date:   2017-10-29 11:49:36 +0100
-date_update:   2017-10-31 17:07:12 +0100
+last_modified_at:   2017-10-31 17:07:12 +0100
 categories: #project design e-commerce web-api pattern
 comments: true
 images_path: /assets/images/posts/2017-10-29-project-ecommerce
 ---
 # Design a B2C E-commerce web application with API integration
-{{ page.date | date: '%B %d, %Y' }}, updated {{ page.date_update | date: '%B %d, %Y' }}  |  900 – 1000 words  |  <i class="fa-regular fa-clock" aria-hidden="true"></i> +/- 4 mn
+{{ page.date | date: '%B %d, %Y' }}, updated {{ page.last_modified_at | date: '%B %d, %Y' }}  |  900 – 1000 words  |  <i class="fa-regular fa-clock" aria-hidden="true"></i> +/- 4 mn
 
 Today I am going to describe how I designed and implemented an e-commerce web site. May I invite you to make yourself comfortable and grab your drink and/or food of choice? Ready? Let’s get working.
 
@@ -54,9 +55,9 @@ To complete the project, I have employed the following method:
 
 The e-commerce web application provides two interfaces, a front-office and a back-office.
 
-The front-office allow customers to consult the product catalog and to perform searches. They can place an order, check out using secured online payments and track their shipments. They can also print invoices and review items.
+The front-office allows customers to consult the product catalog and to perform searches. They can place an order, check out using secured online payments and track their shipments. They can also print invoices and review items.
 
-The back-office allow administrators to manage the product catalog and provide customer service. Each administrator has permissions such as the right to list, to create or to update a resource.
+The back-office allows administrators to manage the product catalog and provide customer service. Each administrator has permissions such as the right to list, to create or to update a resource.
 
 [<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Database design
@@ -88,12 +89,12 @@ In spite of that, I had to weight the advantages and the disadvantages of the mo
 
 - loss of the capacity to enforce data integrity, particularly on the attributes and the values
 
-- complex DML operations : selecting a product based on its attribute’s values or on attributes can take at least two to three joints besides the conditionals clauses
+- complex DML operations : selecting a product based on its attribute’s values or on attributes can take at least two to three joins besides the conditional clauses
 
 [<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Detailed analysis of a use case
 
-I choose to describe the “_Place an order_” use case in this detailed analysis. It consists of a description, and of three UML diagrams: use case, activity and sequence.
+I chose to describe the “_Place an order_” use case in this detailed analysis. It consists of a description, and of three UML diagrams: use case, activity and sequence.
 
 The [_table 1_](#pass-order-use-case) describes the use case. I only assumed the best case scenario and in doing so I left aside the handling of exceptions. An example of an exception would be an item out-of-stock.
 
@@ -124,7 +125,7 @@ The [_table 1_](#pass-order-use-case) describes the use case. I only assumed the
     <td>
       <ul>
         <li>The customer displays the basket and begin the check out process</li>
-        <li>The customer reviews personal informations including the shipping address</li>
+        <li>The customer reviews personal information including the shipping address</li>
         <li>The customer selects a shipping rate</li>
         <li>The customer selects a payment method</li>
         <li>The customer reviews and confirm the order</li>
@@ -164,7 +165,7 @@ The B2C e-commerce web application has a client – server architecture. A user 
 
 I have used Shippo for the shipments and Stripe for the online payments. These web services help me bring an enriching experience to my customers.
 
-I choose Stripe because it allows me to deliver an e-commerce web site that follow the PCI DSS standard. PCI DSS helps organizations meet the security standards for manipulating credit cards data.
+I chose Stripe because it allows me to deliver an e-commerce web site that follow the PCI DSS standard. PCI DSS helps organizations meet the security standards for manipulating credit cards data.
 
 [<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Deliverable
@@ -184,7 +185,7 @@ To carry out this project has been a worthwhile experience. I enjoyed applying s
 
 Did you learn something new as I did? Tell me what you think in the comment section below.
 
-Thank you for you time.
+Thank you for your time.
 
 [<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>](#design-a-b2c-e-commerce-web-application-with-api-integration)
 ## Some useful links
@@ -192,17 +193,3 @@ Thank you for you time.
 - <a href="https://goshippo.com/" target="_blank" rel="noopener noreferrer">Shippo API <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
 - <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">Stripe API <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
 - <a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer">Payment Card Industry Data Security Standard <i class="fa-solid fa-square-up-right" aria-hidden="true"></i></a>
-
-<script>
-var i_fa_node = document.getElementsByClassName("fa-arrow-up");
-for(var i = 0; i < i_fa_node.length; i++){
-  i_fa_node[i].parentNode.parentNode.style.cssFloat = "right";
-}
-
-var img_node = document.getElementsByTagName("img");
-for(var i = 0; i < img_node.length; i++){
-  if(img_node[i].parentNode.tagName == "P"){
-    img_node[i].parentNode.style.textAlign = "center";
-  }
-}
-</script>

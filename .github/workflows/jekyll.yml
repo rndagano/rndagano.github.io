@@ -27,6 +27,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
+          bundler: "4.0.10" # match Gemfile.lock BUNDLED WITH
           bundler-cache: true # bundle install + cache gems
 
       - name: Setup Pages

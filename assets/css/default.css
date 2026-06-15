@@ -79,15 +79,26 @@
   margin-bottom: 0.4rem;
 }
 .post-list .post-date {
-  color: #6a7a7c;
+  color: #5a6a6c;
   font-variant-numeric: tabular-nums;
 }
 
 p{
   text-align: justify;
+  hyphens: auto;
 }
 
 .image-caption{
+  text-align: center;
+}
+
+/* ── Blog post layout (replaces former inline DOM-manipulation script) ───── */
+/* Back-to-top arrow links sit in their own paragraph; float them right. */
+.main-content p:has(> a > .fa-arrow-up) {
+  float: right;
+}
+/* Kramdown wraps standalone images in a paragraph; center them. */
+.main-content p:has(> img) {
   text-align: center;
 }
 
@@ -134,7 +145,7 @@ form#contact-form *::after {
 .form-label-note {
   font-weight: 400;
   font-size: 0.8rem;
-  color: #6a7a7c;
+  color: #5a6a6c;
 }
 
 form#contact-form input[type="text"],
@@ -289,7 +300,7 @@ form#contact-form textarea {
   padding-top: 1rem;
   border-top: 1px solid #dde2e4;
   font-size: 0.82rem;
-  color: #6a7a7c;
+  color: #5a6a6c;
   line-height: 1.6;
   text-align: left !important;
 }

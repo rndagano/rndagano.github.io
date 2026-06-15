@@ -12,7 +12,7 @@ Brussels, building Java-based, cloud-native systems. This is where I write up th
 projects I work on — the specifications, the trade-offs, and what I learned along
 the way.
 
-Head to [Projects]({{ site.projects_surl | relative_url }}) to read the write-ups,
+Head to [Projects]({{ site.projects_url | relative_url }}) to read the write-ups,
 or [About]({{ '/about/' | relative_url }}) for more on me.
 
-GitHub: <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+GitHub: <a href="https://github.com/{{ site.github_username }}" rel="noopener noreferrer">{{ site.github_username }}</a>

@@ -18,12 +18,12 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <section class="page-header" aria-label="Site header">
-      <p class="project-name">{{ site.title | default: site.github.repository_name }}</p>
-      <p class="project-tagline">{{ site.description | default: site.github.project_tagline }}</p>
+      <p class="project-name">{{ site.title }}</p>
+      <p class="project-tagline">{{ site.description }}</p>
       <p class="project-slogan">Learn. Build. Publish.</p>
       <nav class="page-nav" aria-label="Site navigation">
         <a href="{{ '/' | relative_url }}" class="btn">Home</a>
-        <a href="{{ site.projects_surl | relative_url }}" class="btn">Projects</a>
+        <a href="{{ site.projects_url | relative_url }}" class="btn">Projects</a>
         <a href="{{ '/about/' | relative_url }}" class="btn">About</a>
         <a href="{{ '/contact/' | relative_url }}" class="btn">Contact</a>
       {% if site.show_downloads %}

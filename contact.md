@@ -85,7 +85,7 @@ Fill in the form below — I aim to respond within two business days.
               rows="6" placeholder="Describe the engagement you have in mind…"></textarea>
   </div>
 
-  <div class="h-captcha" data-sitekey="918cdde2-c9b6-409c-bb7c-3238e244d8bc"></div>
+  <div class="h-captcha" data-captcha="true"></div>
 
   <div class="form-group form-consent">
     <input type="checkbox" id="gdpr_consent" name="gdpr_consent" required>
@@ -120,7 +120,18 @@ Fill in the form below — I aim to respond within two business days.
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Verify hCaptcha was completed
+    var emailEl = document.getElementById('email');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailEl.value.trim())) {
+      showStatus('Please enter a valid email address.', 'error');
+      emailEl.focus();
+      return;
+    }
+
+    if (!document.getElementById('gdpr_consent').checked) {
+      showStatus('Please accept the privacy notice before sending.', 'error');
+      return;
+    }
+
     if (typeof hcaptcha === 'undefined' || !hcaptcha.getResponse()) {
       showStatus('Please complete the CAPTCHA before sending.', 'error');
       return;

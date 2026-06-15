@@ -7,7 +7,7 @@ hcaptcha: true
 
 # Consulting enquiries
 
-I'm available for platform engineering and backend consulting engagements.
+I'm available for consulting engagements across platform engineering, backend and API development, Kubernetes, CI/CD, architecture reviews, and cloud migrations.
 
 Fill in the form below — I aim to respond within two business days.
 
@@ -29,7 +29,9 @@ Fill in the form below — I aim to respond within two business days.
   <div class="form-group">
     <label for="email">Email <span class="form-required" aria-hidden="true">*</span></label>
     <input type="email" id="email" name="email" required maxlength="254"
-           autocomplete="email" placeholder="you@example.com">
+           autocomplete="email" placeholder="you@example.com"
+           aria-describedby="email-error">
+    <span id="email-error" class="form-field-error" aria-live="polite"></span>
   </div>
 
   <div class="form-group">
@@ -116,21 +118,35 @@ Fill in the form below — I aim to respond within two business days.
   var form = document.getElementById('contact-form');
   var status = document.getElementById('form-status');
   var btn = document.getElementById('submit-btn');
+  var emailEl = document.getElementById('email');
+  var emailError = document.getElementById('email-error');
+
+  emailEl.addEventListener('input', function () {
+    emailError.textContent = '';
+    emailEl.removeAttribute('aria-invalid');
+  });
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var emailEl = document.getElementById('email');
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailEl.value.trim())) {
-      showStatus('Please enter a valid email address.', 'error');
-      emailEl.focus();
+    if (!form.checkValidity()) {
+      if (!document.getElementById('gdpr_consent').checked) {
+        showStatus('Please accept the privacy notice before sending.', 'error');
+      } else {
+        form.querySelector(':invalid').focus();
+        showStatus('Please fill in all required fields.', 'error');
+      }
       return;
     }
 
-    if (!document.getElementById('gdpr_consent').checked) {
-      showStatus('Please accept the privacy notice before sending.', 'error');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailEl.value.trim())) {
+      emailError.textContent = 'Please enter a valid email address.';
+      emailEl.setAttribute('aria-invalid', 'true');
+      emailEl.focus();
       return;
     }
+    emailError.textContent = '';
+    emailEl.removeAttribute('aria-invalid');
 
     if (typeof hcaptcha === 'undefined' || !hcaptcha.getResponse()) {
       showStatus('Please complete the CAPTCHA before sending.', 'error');

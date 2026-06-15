@@ -8,9 +8,9 @@ comments: true
 # Talk less, ship more
 {{ page.date | date: '%B %d, %Y' }}
 
-In 2018, fresh into my career, I published one article — a short technical breakdown of my
-thesis. It landed me my second job four months later. That's when I learned what publishing is
-worth.
+In 2017, fresh out of my bachelor's, I published [one article]({% post_url 2017-10-29-project-ecommerce %}) — a short
+technical breakdown of my thesis. I landed my first job the following January, and four months
+later that same article helped me secure my second. That's when I learned what publishing is worth.
 
 And yet I've never felt the urge to blog. So why am I here, doing exactly that?
 

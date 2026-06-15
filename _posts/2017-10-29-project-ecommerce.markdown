@@ -6,6 +6,7 @@ date:   2017-10-29 11:49:36 +0100
 last_modified_at:   2017-10-31 17:07:12 +0100
 categories: #project design e-commerce web-api pattern
 comments: true
+archived: true
 images_path: /assets/images/posts/2017-10-29-project-ecommerce
 ---
 # Design a B2C E-commerce web application with API integration

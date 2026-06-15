@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://web3forms.com https://js.hcaptcha.com https://newassets.hcaptcha.com https://rndagano.disqus.com https://c.disquscdn.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://*.disquscdn.com https://referrer.disqus.com https://imgs.hcaptcha.com; connect-src 'self' https://api.web3forms.com https://api.hcaptcha.com https://disqus.com; frame-src https://newassets.hcaptcha.com https://disqus.com; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://web3forms.com https://js.hcaptcha.com https://newassets.hcaptcha.com https://rndagano.disqus.com https://c.disquscdn.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://*.disquscdn.com https://referrer.disqus.com https://imgs.hcaptcha.com; connect-src 'self' https://api.web3forms.com https://api.hcaptcha.com https://disqus.com; frame-src https://newassets.hcaptcha.com https://disqus.com; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com;">
 {% seo %}
+    {% feed_meta %}
 
     <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/fontawesome.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/solid.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/regular.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/default.css' }}">
     {% if page.hcaptcha %}

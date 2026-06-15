@@ -24,7 +24,7 @@ When you submit the consulting enquiry form I collect: your name, email address,
 
 ### No analytics, no tracking
 
-This site does not use analytics software, advertising pixels, or any tracking beyond what is listed below. Google Fonts are self-hosted; no request is made to Google's servers when you visit.
+This site does not use analytics software, advertising pixels, or any tracking beyond what is listed below. Web fonts (Google Fonts) and icon fonts (Font Awesome) are self-hosted; no request is made to Google's or any CDN's servers when you visit.
 
 ## Processors and third-party services
 
@@ -32,7 +32,6 @@ This site does not use analytics software, advertising pixels, or any tracking b
 |---------|---------|-------------|---------------------|
 | **Web3Forms** (Neutrino Software Ltd) | Forwards contact form submissions to my email inbox. Does not store submissions beyond delivery. | Name, email, company, enquiry fields, message | [web3forms.com/privacy](https://web3forms.com/privacy) |
 | **hCaptcha** (Intuition Machines, Inc., US) | Spam protection on the contact form. Invisible unless a challenge is triggered. May process browser signals to distinguish humans from bots. | Browser signals (no form data) | [hcaptcha.com/privacy](https://www.hcaptcha.com/privacy) |
-| **Font Awesome via cdnjs** (Cloudflare CDN) | Delivers icon fonts for the site. No cookies set; Cloudflare may log IP addresses for CDN performance purposes. | Your IP address | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
 | **Disqus** (Zeta Global Corp, US) | Comment threads on blog posts. **Only loaded if you click "Load comments".** Sets third-party cookies and collects usage data. | Browsing data, comment content | [disqus.com/privacy](https://disqus.com/privacy/) |
 
 ## Data retention

@@ -31,4 +31,4 @@ CGOA in progress).
 
 - GitHub: [rndagano](https://github.com/rndagano)
 - LinkedIn: [raymondndagano](https://www.linkedin.com/in/raymondndagano)
-- Consulting enquiries: hello@ishugrowth.com
+- Consulting enquiries: [contact form](/contact/)
